@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 천안의 맛집 </title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+	<!--This is out title-->
+	 <h1><p class=Brandname title = "This is a 백석대학교 web page project inspired by the profile on Instagram" > 천안 맛집 </p></h1>
+	 <hr>
+	 <nav>
+	<ul>
+		<li><a href="index.html">홈</li>
+	 <li><a href="Dujeongdong.html">두정동</li>
+	 <li><a href="Shinbudong.html">신부동</li>
+	 <li><a href="Buldangdong.html">불당동</li>
+	 <li><a href="Sayongdong.html">쌍용동</li>
+	 <li><a href="Others.html">기타</li>
+	</ul>
+	</nav>
+	<div class="wrapper">
+			
+			<img class="logo" src="img/cheonan.jpg" alt="cheonan friends">
+
+	</div>
+	 <!--this is a declaration-->
+	 <h5 class="title">  These are the restaurants near by Sayongdong: </h5>
+	 <div id="map"></div>
+	 <script>
+	 // Initialize and add the map
+	 function initMap() {
+	   // The location of Uluru
+	   var cheonan = {lat: 36.8065, lng: 127.1522};
+	   // The map, centered at Uluru
+	   var map = new google.maps.Map(
+	       document.getElementById('map'), {zoom: 14, center: cheonan});
+	   // The marker, positioned at Uluru
+	   var marker = new google.maps.Marker({position: cheonan, map: map});
+	 }
+
+
+
+	 </script>
+
+	 <script async defer
+	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt4dOmq8jB249yRgmajAmM8bNmO7rf--U&callback=initMap">
+	 </script>
+
+
+
+	  <h5 style="text-align: right;">by Lalo</h5>
+
+
+	  <h3>This is a title</h3>
+	  <p>This is a paragraph</p>
+	  <a href="#"> this is a link</a>
+
+	</body>
+</html>
